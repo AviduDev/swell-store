@@ -4,6 +4,8 @@ import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
+import Head from 'next/head'
+import CatagoryList from '@components/ui/CatagoryList'
 
 export async function getStaticProps({
   preview,
@@ -40,7 +42,20 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Grid variant="filled">
+      <Head>
+        <title>Teees Store | Buy/ Design Custom Made T-Shirt</title>
+      </Head>
+      {/* -------------------------HERO-------------------------------- */}
+      <Hero />
+      {/* --------------------------PRODUCT CATAGORIES------------------ */}
+      <CatagoryList />
+      {/* ----------------------------SERVICES----------------------------- */}
+      {/* ------------------------------WHY US------------------------------- */}
+      {/* ----------------------------------PRODUCT LIST-------------------- */}
+      {/* -----------------------------SHIPPING----------------------------- */}
+      {/* ----------------------------TESTIMONIALS------------------------ */}
+      {/* ------------------------------WHY US----------------------------- */}
+      {/* <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
@@ -78,7 +93,7 @@ export default function Home({
         {products.slice(3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
-      </Marquee>
+      </Marquee> */}
       {/* <HomeAllProductsGrid
         newestProducts={products}
         categories={categories}
