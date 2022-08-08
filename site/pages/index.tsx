@@ -1,11 +1,16 @@
 import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
-import { ProductCard } from '@components/product'
+import { ProductCard, ProductSlider } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import CatagoryList from '@components/ui/CatagoryList'
+import Features from '../components/ui/Features/index';
+import WhyUs from '../components/ui/WhyUs/WhyUs';
+import ProductSliderControl from '@components/product/ProductSliderControl'
+import Shipping from '@components/ui/Shipping'
+import Testimonial from '@components/ui/Testimonial/Testimonial'
 
 export async function getStaticProps({
   preview,
@@ -50,11 +55,16 @@ export default function Home({
       {/* --------------------------PRODUCT CATAGORIES------------------ */}
       <CatagoryList />
       {/* ----------------------------SERVICES----------------------------- */}
+      <Features />
       {/* ------------------------------WHY US------------------------------- */}
+      <WhyUs />
       {/* ----------------------------------PRODUCT LIST-------------------- */}
+      <ProductSlider />
       {/* -----------------------------SHIPPING----------------------------- */}
+      <Shipping />
       {/* ----------------------------TESTIMONIALS------------------------ */}
-      {/* ------------------------------WHY US----------------------------- */}
+      <Testimonial />
+      {/* ------------------------------ELSE----------------------------- */}
       {/* <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
