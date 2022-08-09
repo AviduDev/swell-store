@@ -5,12 +5,14 @@ import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
-import CatagoryList from '@components/ui/CatagoryList'
-import Features from '../components/ui/Features/index';
+import CategoryList from '@components/ui/CategoryList'
+import Features from '../components/ui/Design/index';
 import WhyUs from '../components/ui/WhyUs/WhyUs';
 import ProductSliderControl from '@components/product/ProductSliderControl'
 import Shipping from '@components/ui/Shipping'
 import Testimonial from '@components/ui/Testimonial/Testimonial'
+import Design from '../components/ui/Design/index';
+import Faq from '@components/ui/Faq/Faq'
 
 export async function getStaticProps({
   preview,
@@ -51,20 +53,37 @@ export default function Home({
         <title>Teees Store | Buy/ Design Custom Made T-Shirt</title>
       </Head>
       {/* -------------------------HERO-------------------------------- */}
+      <section>
       <Hero />
+      </section>
       {/* --------------------------PRODUCT CATAGORIES------------------ */}
-      <CatagoryList />
+      <section>
+      <CategoryList />
+      </section>
       {/* ----------------------------SERVICES----------------------------- */}
-      <Features />
+      <section>
+      <Design />
+      </section>
       {/* ------------------------------WHY US------------------------------- */}
+      <section>
       <WhyUs />
+      </section>
       {/* ----------------------------------PRODUCT LIST-------------------- */}
+      <section>
       {/* <ProductSlider /> */}
+      </section>
       {/* -----------------------------SHIPPING----------------------------- */}
+      <section>
       <Shipping />
+      </section>
       {/* ----------------------------TESTIMONIALS------------------------ */}
+      <section>
       <Testimonial />
-      {/* ------------------------------ELSE----------------------------- */}
+      </section>
+      {/* ------------------------------FAQ----------------------------- */}
+      <section>
+      <Faq />
+      </section>
       {/* <Grid variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
           <ProductCard
