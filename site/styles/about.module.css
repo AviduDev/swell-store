@@ -1,0 +1,15 @@
+.team {
+    border: solid 1px black;
+    border-radius: 25px;
+    overflow: hidden;
+    paddin: 1vh;
+    margin: 1vh;
+    max-width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+.team img {
+    border-radius: 25px;
+    overflow: hidden;
+}
