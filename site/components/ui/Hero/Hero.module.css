@@ -1,3 +1,5 @@
+
+
 .root {
   @apply flex flex-col py-16 mx-auto;
 }
@@ -29,8 +31,9 @@
   }
 }
 .hero_h1 {
+  /* font-family: 'Passion One', cursive; */
   font-size: 10vh;
-  font-weight: 800;
+  font-weight: 600;
   color: #0466c8;
   text-align: center;
 }

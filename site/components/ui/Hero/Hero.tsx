@@ -6,7 +6,7 @@ import Button from '../Button'
 
 const Hero = () => {
   return (
-    <div>
+    <div className={styles.main}>
       <div>
         <h1 className={styles.hero_h1}>
           BUY <br />

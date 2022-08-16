@@ -1,3 +1,22 @@
 body {
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Sora', sans-serif;
   }
+
+h1 {
+    font-family: 'Passion One', cursive;
+}
+  
+p{
+    font-family: 'Sora', sans-serif;
+}
+
+h2 {
+  font-family: 'Passion One', cursive;
+}
+
+h3 {
+  font-family: 'Passion One', cursive;
+  font-weight: 400;
+}
+
