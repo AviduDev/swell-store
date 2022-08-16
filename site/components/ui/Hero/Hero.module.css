@@ -36,6 +36,7 @@
   font-weight: 600;
   color: #0466c8;
   text-align: center;
+  line-height: 9vh;
 }
 
 .hero_h2 {
@@ -57,4 +58,25 @@
 .hero_btn:hover {
   background-color: black;
   color: white;
+}
+
+
+.main {
+  border: solid 1px black;
+  margin: 1vh;
+  padding: 1vh;
+  border-radius: 25px;
+  background-color: #bde0fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_main {
+  border: solid 1px black;
+  margin: 1vh;
+  padding: 1vh;
+  border-radius: 25px;
+  background-color: #ffc8dd;
+  min-width: 90vw;
 }

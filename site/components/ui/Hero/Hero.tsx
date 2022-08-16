@@ -7,7 +7,7 @@ import Button from '../Button'
 const Hero = () => {
   return (
     <div className={styles.main}>
-      <div>
+      <div className={styles.hero_main}>
         <h1 className={styles.hero_h1}>
           BUY <br />
           DESIGN <br />
@@ -20,7 +20,7 @@ const Hero = () => {
         <Link href="/search">
           <button className={styles.hero_btn}>SHOP</button>
         </Link>
-        <Link href="/search">
+        <Link href="/design">
           <button className={styles.hero_btn}>DESIGN</button>
         </Link>
       </div>
