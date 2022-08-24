@@ -2,6 +2,7 @@ import { FC, memo, useEffect } from 'react'
 import cn from 'clsx'
 import s from './Searchbar.module.css'
 import { useRouter } from 'next/router'
+import styles from './Search.module.css'
 
 interface Props {
   className?: string
@@ -38,6 +39,7 @@ const Searchbar: FC<Props> = ({ className, id = 'search' }) => {
         Search
       </label>
       <input
+        // className={styles.search}
         id={id}
         className={s.input}
         placeholder="Search for products..."
