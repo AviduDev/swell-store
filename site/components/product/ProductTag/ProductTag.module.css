@@ -1,0 +1,11 @@
+.name {
+    font-size: 3.5vh;
+}
+.price {
+    border: solid black 1px;
+    padding: 0.5vh;
+    border-radius: 15px;
+    font-size: 3vh;
+    background-color: #ffc8dc;
+    font-weight: 600;
+}

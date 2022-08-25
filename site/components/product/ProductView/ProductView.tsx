@@ -25,8 +25,8 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
   return (
     <>
       <Container className="max-w-none w-full" clean>
-        <div className={cn(s.root, 'fit')}>
-          <div className={cn(s.main, 'fit')}>
+        <div className={s.container}>
+          <div className={cn(s.main)}>
             <div className={s.sliderContainer}>
               <div key={product.id}>
                 {product.images.map((image, i) => (
@@ -45,6 +45,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
               </div>
             </div>
             <ProductTag
+              className={s.prdct}
               name={product.name}
               price={`${price} ${product.price?.currencyCode}`}
               fontSize={32}

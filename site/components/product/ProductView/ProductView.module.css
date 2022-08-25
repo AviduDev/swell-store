@@ -1,4 +1,4 @@
-.root {
+/* .root {
   @apply relative grid items-start gap-1 grid-cols-1 overflow-x-hidden;
   min-height: auto;
 }
@@ -56,4 +56,31 @@
   .imageContainer {
     max-height: 600px;
   }
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh;
+}
+
+.imageContainer {
+  background-color: #bce0fd;
+  border-radius: 15px;
+  padding: 1vh;
+  border: solid 1px black;
+}
+
+.prdct {
+  width: 100wv;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vh;
+  padding: 1vh;
+}
+
+.sidebar {
+  border: solid 1px black;
 }
