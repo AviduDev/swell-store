@@ -1,0 +1,24 @@
+
+.productImage {
+    padding: 2vh;
+    background-color: #ffc8dc;
+}
+.header {
+    background-color: #bce0fd;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    align-items: center;
+}
+.name {
+    font-size: 2.5vh;
+}
+.price {
+    font-size: 2vh;
+}
+
+.card {
+    overflow: hidden;
+    border: solid 1px black;
+    border-radius: 15px;
+}
